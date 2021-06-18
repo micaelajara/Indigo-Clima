@@ -1,0 +1,55 @@
+header {
+    &.masthead {
+        background: linear-gradient(to bottom, rgba(35, 38, 44, 0.8) 0%, rgba(50, 148, 204, 0.8) 100%), 
+        //background: linear-gradient(to bottom, rgba(0, 0, 0, 0.575) 0%, rgba(0, 0, 0, 0.356) 100%), 
+                    url("../img/home.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        padding-top: 7.5rem;
+        padding-bottom: calc(10rem - 4.5rem);
+        img {
+            padding-top: 0.5rem;
+            padding-bottom: 2rem;
+            width: 16.25rem;
+            @media (min-width: 992px) {
+                padding-top: 3.75rem;
+                padding-bottom: 0;
+            }
+        }
+        h1 {
+            color: $almost_white; 
+            font: $font__title;
+            text-transform: uppercase;
+        }
+        @media (min-width: 992px) {
+            min-height: 40rem;
+            padding-top: 4.5rem;
+            padding-bottom: 0;
+            h1 {
+                font-size: 3.5rem;
+            }
+            p {
+                font-size: 1.15rem;
+            }
+        }
+        .btn-indigo {
+            background-color: $indigo_yellow;
+            border-color: $indigo_yellow;
+            border-radius: 10rem;
+            color: $clasic__blue;
+            font: $font__header-btn;
+            margin-top: 4.125rem;
+            margin-bottom: 3rem;
+            padding: 1.25rem 2.25rem;
+            &:hover, &:focus {
+                background-color: $dark_yellow;
+            }
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
+            }
+            @media (min-width: 992px) {
+                margin-top: 3rem;
+            }
+        }
+    }
+}

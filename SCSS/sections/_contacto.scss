@@ -1,0 +1,65 @@
+#contacto {
+    padding: 6.25rem 0 0 0;
+    .contacto {
+        background-color: $almost_white;
+        width: 100%;
+        @media (min-width: 768px) {
+            background-attachment: fixed;
+            background-image: url("../img/contactSM.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        @media (min-width: 1024px) and (min-height: 768px) {
+            background-attachment: local;
+            background-image: url("../img/contactMD.png");
+            
+        }
+        @media (min-width: 1366px) and (min-height: 1024px) {
+            background-image: url("../img/contactLG.png");
+            background-size:auto;
+            
+        }
+        h3 {
+            padding: 1.5rem 0;
+            @media (min-width: 992px) {
+                font-size: 2.75rem;
+            }
+        }
+        .infoContacto {
+            padding-bottom: 2.25rem;
+            margin: 0;
+            @media (min-width: 992px) {
+                padding: 1rem 10rem 3rem;
+            }
+            @media (min-width: 1024px) and (min-height: 768px) {
+                padding: 1rem 1rem 3rem;
+            }
+            .card {
+                background-color: rgba(255, 255, 255, 0.7);
+                border-radius: 2rem;
+                flex-wrap: wrap;
+                width: 100%;
+                @media (min-width: 768px) {
+                    padding-bottom: 1rem;
+                    width: 50%;
+                }
+                @media (min-width: 992px) {
+                    width: 22%;
+                }
+                .svg-inline--fa {
+                    color: $indigo_yellow;
+                    font-size: 2.75rem;
+                    margin: 1rem 0;
+                    @media (min-width: 992px) {
+                        margin: 2rem 0;
+                    }
+                }
+                p{
+                    font-size: 1.063rem;
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}

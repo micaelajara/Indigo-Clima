@@ -1,0 +1,94 @@
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.page-section {
+  padding: 6.25rem 0.5rem;
+  @media (min-width: 992px) {
+      padding: 8.125rem 0;
+  }
+  div {
+      @media (max-width: 576px){
+      margin: 0;
+      width: 100%;
+      }
+  }
+  h2 {
+      color: $electric_blue;
+      font: $font__title;
+      letter-spacing: 0.25rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      @media (min-width: 992px) {
+        font-size: 3.5rem;
+        margin-bottom: 2.5rem;
+      }
+  }
+  h3 {
+      color: $live_blue;
+      font: $font__subtitle;
+      line-height: 3rem;
+      padding: 3.5rem 0;
+      text-align: center;
+      @media (min-width: 768px) {
+        padding: 7.5rem 0;
+      }
+      @media (min-width: 992px) {
+        font-size: 3.25rem;
+      }
+  }
+  h5 {
+    color: $light_clasic-blue;
+    font: $font__preguntas;
+  }
+  h6 {
+    font: $font__h6;
+    color: $almost_black;
+    letter-spacing: 0.06rem;
+    margin-bottom: 0;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    @media (min-width: 768px) {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      margin-top: 1rem;
+      padding-right: 0;
+    }
+    @media (min-width: 992px) {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        line-height: 2.25rem;
+        padding: 0.5rem 0;
+    }
+  }
+  p {
+      color: $almost_black;
+      font: $font__section-text;
+      letter-spacing: 0.06rem;
+      padding-top: 1.5rem;
+      text-align: center;
+      @media (min-width: 992px) {
+          font-size: 1.25rem;
+      }
+    }
+  hr {
+      border-color: $indigo_yellow;
+      border-width: 0.125rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+  }
+}
+
+.subtitle {
+  width: 100%;
+  background-color: $almost_white;
+  h3 {
+    letter-spacing: 0.07rem;
+  }
+}
+
