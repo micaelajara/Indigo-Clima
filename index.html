@@ -22,7 +22,7 @@
         .whatsapp-button {
             position: fixed;
             bottom: 40px;
-            right: 40px; 
+            right: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,6 +32,7 @@
             font-size: 30px;
             z-index: 100;
         }
+
         .whatsapp {
             display: flex;
             justify-content: center;
@@ -42,6 +43,7 @@
             color: #FFF;
             border-radius: 50%;
         }
+
         @media screen and (max-width: 600px) {
             .whatsapp-button {
                 width: 70px;
@@ -51,13 +53,81 @@
             }
         }
     </style>
-</head> 
+
+    <!-- Global site tag (gtag.js) - Google Ads: 354712473 -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-354712473"></script>
+
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('js', new Date());
+
+
+
+        gtag('config', 'AW-354712473');
+
+    </script>
+
+
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            console.log('ready to rock');
+
+            var wpp = document.querySelectorAll('a[href*="whatsapp"]')
+
+            var mail = document.querySelectorAll('a[href*="mailto:"]')
+
+            if (wpp) {
+
+                wpp.forEach((el) => {
+
+                    el.addEventListener('click', function () {
+
+                        console.log('wpp sent');
+
+                        gtag('event', 'conversion', { 'send_to': 'AW-354712473/8Fu6CPnKmPQCEJn3kakB' });
+
+                    });
+
+                });
+
+            };
+
+            if (mail) {
+
+                mail.forEach((el) => {
+
+                    el.addEventListener('click', function () {
+
+                        console.log('mail sent');
+
+                        gtag('event', 'conversion', { 'send_to': 'AW-354712473/Zt5gCIT1wvQCEJn3kakB' });
+
+                    });
+
+                });
+
+            };
+
+        });
+
+    </script>
+
+
+</head>
+
 <body id="page-top">
 
 
     <div class="whatsapp-button">
-        <a href="https://api.whatsapp.com/send?phone=+5491151395768"
-        class="whatsapp" target="_blank">     
+        <a href="https://api.whatsapp.com/send?phone=+5491151395768" class="whatsapp" target="_blank">
             <img src="./img/whatsappicon.svg" style="width: 50%;">
         </a>
     </div>
@@ -346,19 +416,23 @@
         <div class="justify-content-center text-center contacto" data-aos="fade-up">
             <h3>Contactate con nosotros!</h3>
             <div class="row infoContacto d-flex justify-content-lg-between">
-                <a href="https://api.whatsapp.com/send?phone=+5491151395768" target="_blank" style="text-decoration: none; color: #2C2C28">
+                <a href="https://api.whatsapp.com/send?phone=+5491151395768" target="_blank"
+                    style="text-decoration: none; color: #2C2C28">
                     <div class="card align-items-center" data-aos="zoom-in">
                         <i class="fab fa-whatsapp"></i>
                         <p>Teléfono</p>
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5491151395768" style="text-decoration: none; color: #2C2C28"><p>+54 9 11 5139-5768</p></a>
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5491151395768"
+                            style="text-decoration: none; color: #2C2C28">
+                            <p>+54 9 11 5139-5768</p>
+                        </a>
                     </div>
                 </a>
                 <a href="mailto:admin@indigoclima.com.ar" target="_blank" style="text-decoration: none; color: #2C2C28">
                     <div class="card align-items-center" data-aos="zoom-in">
                         <i class="far fa-envelope"></i>
                         <p>Email</p>
-                        <p><a  href="mailto:admin@indigoclima.com.ar"
-                            style="text-decoration: none; color: #2C2C28">admin@indigoclima.com.ar</a></p>
+                        <p><a href="mailto:admin@indigoclima.com.ar"
+                                style="text-decoration: none; color: #2C2C28">admin@indigoclima.com.ar</a></p>
                     </div>
                 </a>
                 <div class=" card align-items-center" data-aos="zoom-in">
@@ -366,7 +440,7 @@
                     <p>Dirección</p>
                     <p>Libertad 434 1S, CABA, Argentina</p>
                 </div>
-                
+
                 <div class=" card align-items-center" data-aos="zoom-in">
                     <i class="fab fa-instagram"></i>
                     <p>Instagram</p>
@@ -386,8 +460,8 @@
                 </a>
             </div>
         </div>
-    </footer>    
-    
+    </footer>
+
     <!-- Bootstrap core JS-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -402,4 +476,5 @@
         });</script>
 
 </body>
+
 </html>
